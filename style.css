@@ -633,23 +633,28 @@ scroll animation */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 20px;
 }
+
 .form-group {
     margin-bottom: 20px;
-    width: 600px;
+    width: 100%; /* Set to 100% to ensure it's responsive */
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
+
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .form-group textarea {
     resize: vertical;
 }
+
 .form-group button {
     padding: 10px 20px;
     background-color: grey;
@@ -658,6 +663,25 @@ scroll animation */
     border-radius: 5px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 100%; 
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 10px; 
+    }
+    
+    .form-group {
+        margin-bottom: 15px; 
+    }
 }
