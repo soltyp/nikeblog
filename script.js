@@ -82,3 +82,16 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+
+
+
+
+//BLOKOWANIE FORMULARZA
+document.querySelector('form').onsubmit = function(event) {
+    event.preventDefault(); // Blokuje domyślne działanie formularza (wysłanie formularza)
+    // Tutaj można dodać inne działania, które mają się wykonać po kliknięciu 'Wyślij', np. wyświetlenie alertu
+    alert('Formularz zablokowany!');
+};

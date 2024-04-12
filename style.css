@@ -626,7 +626,8 @@ scroll animation */
 
 /* contact */
 .contact-form {
-    max-width: 700px;
+    width: 600px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
     background-color: white;
@@ -679,6 +680,7 @@ scroll animation */
 @media (max-width: 480px) {
     .contact-form {
         padding: 10px; 
+        margin: 10px;
     }
     
     .form-group {
